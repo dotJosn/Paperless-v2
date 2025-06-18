@@ -53,11 +53,11 @@ export default function SettingsPage() {
 
   // Estados para as configurações
   const [companySettings, setCompanySettings] = useState<CompanySettings>({
-    name: "Empresa Industrial LTDA",
-    address: "Rua das Indústrias, 123 - Distrito Industrial",
-    phone: "(11) 3456-7890",
-    email: "contato@empresa.com.br",
-    website: "www.empresa.com.br",
+    name: "Simoldes Tools",
+    address: "KM 628 BR-376, 26500 - Campo Largo da Roseira, São José dos Pinhais - PR, 83015-000",
+    phone: "(41) 2141-2200",
+    email: "contato@simoldes.com.br",
+    website: "www.simoldes.com.br",
     logo: "",
   })
 

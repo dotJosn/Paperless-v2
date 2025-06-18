@@ -22,29 +22,7 @@ const MOCK_PROGRAMS: Program[] = [
     id: "prog-001",
     name: "Usinagem CNC - Peça A001",
     description: "Programa para usinagem da peça A001 em alumínio 6061",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Instruções de Usinagem - Peça A001</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Fixar peça no torno CNC</p>
-          <p>• Verificar alinhamento e centragem</p>
-          <p>• Confirmar material: Alumínio 6061</p>
-        </div>
-        <div class="step">
-          <h3>2. Configuração de Ferramentas</h3>
-          <p>• T01: Ferramenta de desbaste Ø12mm</p>
-          <p>• T02: Ferramenta de acabamento Ø8mm</p>
-          <p>• Verificar afiação das ferramentas</p>
-        </div>
-        <div class="step">
-          <h3>3. Execução</h3>
-          <p>• Executar ciclo de desbaste (Velocidade: 1200 RPM)</p>
-          <p>• Trocar para ferramenta de acabamento</p>
-          <p>• Executar ciclo de acabamento (Velocidade: 1800 RPM)</p>
-        </div>
-      </div>
-    `,
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Usinagem - Peça A001</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Usinagem - Peça A001</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar peça no torno CNC</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar alinhamento e centragem</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Alumínio 6061</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Ferramenta de desbaste Ø12mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar afiação</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Ferramenta de acabamento Ø8mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar afiação</td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Executar ciclo de desbaste</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 1200 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Trocar para ferramenta de acabamento</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Executar ciclo de acabamento</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 1800 RPM</td></tr></tbody></table></div></body></html>`,
     programmerId: "prog-001",
     programmerName: "Carlos Santos",
     assignedOperatorId: "op-001",
@@ -59,275 +37,78 @@ const MOCK_PROGRAMS: Program[] = [
   },
   {
     id: "prog-002",
-    name: "Fresamento - Base Motor BM-001",
-    description: "Fresamento da base do motor conforme desenho técnico BM-2024-001",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Processo de Fresamento - Base Motor</h2>
-        <div class="step">
-          <h3>1. Preparação do Material</h3>
-          <p>• Material: Aço 1045</p>
-          <p>• Dimensões: 200x150x50mm</p>
-          <p>• Fixar na mesa da fresadora com morsa</p>
-        </div>
-        <div class="step">
-          <h3>2. Configuração de Ferramentas</h3>
-          <p>• Fresa de topo Ø12mm para desbaste</p>
-          <p>• Fresa de acabamento Ø8mm</p>
-          <p>• Verificar balanceamento das fresas</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    assignedOperatorId: "op-001",
-    assignedOperatorName: "João Silva",
+    name: "Usinagem CNC - Suporte B002",
+    description: "Programa para usinagem do suporte B002 em aço 1045",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Usinagem - Suporte B002</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Usinagem - Suporte B002</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar peça na fresadora CNC</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar zero peça</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Aço 1045</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Fresamento frontal Ø16mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Pastilha nova</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Broca Ø6.8mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar afiação</td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fresamento frontal</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 800 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Furar 4 furos Ø6.8mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 1200 RPM</td></tr></tbody></table></div></body></html>`,
+    programmerId: "prog-002",
+    programmerName: "Ana Oliveira",
+    assignedOperatorId: "op-003",
+    assignedOperatorName: "Pedro Costa",
     status: "running",
     priority: "medium",
-    estimatedTimeHours: 4.0,
-    createdAt: new Date("2024-01-14T14:30:00"),
-    startedAt: new Date("2024-01-15T08:00:00"),
-    updatedAt: new Date("2024-01-15T08:00:00"),
+    estimatedTimeHours: 3,
+    createdAt: new Date("2024-01-11T09:15:00"),
+    startedAt: new Date("2024-01-11T10:30:00"),
+    completedAt: undefined,
+    updatedAt: new Date("2024-01-11T12:45:00"),
   },
   {
     id: "prog-003",
-    name: "Torneamento - Eixo Principal EP-345",
-    description: "Torneamento do eixo principal conforme especificações técnicas",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Torneamento - Eixo Principal</h2>
-        <div class="step">
-          <h3>1. Setup da Máquina</h3>
-          <p>• Torno CNC Mazak QuickTurn 200</p>
-          <p>• Fixar peça entre pontas</p>
-          <p>• Verificar concentricidade</p>
-        </div>
-        <div class="step">
-          <h3>2. Operações</h3>
-          <p>• Desbaste externo Ø50mm</p>
-          <p>• Acabamento final Ra 0.8</p>
-          <p>• Chanfro 45° nas extremidades</p>
-        </div>
-      </div>
-    `,
+    name: "Torneamento - Eixo C003",
+    description: "Programa para torneamento do eixo C003 em aço inox 304",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Torneamento - Eixo C003</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Torneamento - Eixo C003</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar barra no torno CNC</td><td style="padding: 8px; border: 1px solid #d1d5db;">Usar placa de 3 castanhas</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar centragem</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Aço Inox 304</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Insertos para torneamento</td><td style="padding: 8px; border: 1px solid #d1d5db;">Pastilha CNMG</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Ferramenta de roscar</td><td style="padding: 8px; border: 1px solid #d1d5db;">M10x1.5</td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Desbaste externo</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 600 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Acabamento externo</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 800 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Rosquear extremidade</td><td style="padding: 8px; border: 1px solid #d1d5db;">M10x1.5</td></tr></tbody></table></div></body></html>`,
     programmerId: "prog-001",
     programmerName: "Carlos Santos",
+    assignedOperatorId: "op-002",
+    assignedOperatorName: "Marcos Oliveira",
     status: "pending",
-    priority: "urgent",
-    estimatedTimeHours: 3.0,
-    createdAt: new Date("2024-01-15T10:00:00"),
-    updatedAt: new Date("2024-01-15T10:00:00"),
+    priority: "high",
+    estimatedTimeHours: 4,
+    createdAt: new Date("2024-01-12T14:00:00"),
+    startedAt: undefined,
+    completedAt: undefined,
+    updatedAt: new Date("2024-01-12T14:00:00"),
   },
   {
     id: "prog-004",
-    name: "Furação Múltipla - Flange FL-200",
-    description: "Furação de 8 furos Ø10mm em flange de aço inox",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Furação Múltipla - Flange</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Material: Aço Inox 316L</p>
-          <p>• Espessura: 20mm</p>
-          <p>• Fixar com dispositivo especial</p>
-        </div>
-        <div class="step">
-          <h3>2. Furação</h3>
-          <p>• 8 furos Ø10mm em círculo Ø180mm</p>
-          <p>• Broca HSS-Co 10mm</p>
-          <p>• Velocidade: 300 RPM</p>
-          <p>• Avanço: 0.1mm/rev</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    assignedOperatorId: "op-001",
-    assignedOperatorName: "João Silva",
+    name: "Fresamento - Placa D004",
+    description: "Programa para fresamento da placa D004 em alumínio 7075",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Fresamento - Placa D004</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Fresamento - Placa D004</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar placa na mesa</td><td style="padding: 8px; border: 1px solid #d1d5db;">Usar grampos em T</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar zero peça</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Alumínio 7075</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Fresamento de topo Ø10mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">3 cortes</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Fresamento de contorno Ø6mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fresamento de topo</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 2000 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fresamento de contorno</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 2500 RPM</td></tr></tbody></table></div></body></html>`,
+    programmerId: "prog-003",
+    programmerName: "Fernanda Lima",
+    assignedOperatorId: "op-004",
+    assignedOperatorName: "Ricardo Almeida",
     status: "completed",
     priority: "medium",
-    estimatedTimeHours: 1.5,
-    createdAt: new Date("2024-01-12T09:00:00"),
-    startedAt: new Date("2024-01-12T13:00:00"),
-    completedAt: new Date("2024-01-12T14:30:00"),
-    updatedAt: new Date("2024-01-12T14:30:00"),
+    estimatedTimeHours: 2,
+    createdAt: new Date("2024-01-09T10:00:00"),
+    startedAt: new Date("2024-01-09T11:15:00"),
+    completedAt: new Date("2024-01-09T13:00:00"),
+    updatedAt: new Date("2024-01-09T13:00:00"),
   },
   {
     id: "prog-005",
-    name: "Mandrilamento - Bucha BU-150",
-    description: "Mandrilamento interno de bucha para tolerância H7",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Mandrilamento - Bucha BU-150</h2>
-        <div class="step">
-          <h3>1. Setup</h3>
-          <p>• Mandriladora horizontal</p>
-          <p>• Fixar peça na mesa</p>
-          <p>• Verificar esquadro</p>
-        </div>
-        <div class="step">
-          <h3>2. Operação</h3>
-          <p>• Mandrilar furo Ø150mm H7</p>
-          <p>• Profundidade: 80mm</p>
-          <p>• Acabamento Ra 1.6</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    status: "cancelled",
+    name: "Furação - Bloco E005",
+    description: "Programa para furação do bloco E005 em aço 1020",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Furação - Bloco E005</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Furação - Bloco E005</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar bloco na mesa</td><td style="padding: 8px; border: 1px solid #d1d5db;">Usar morsa</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar zero peça</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Aço 1020</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Broca centralizadora</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Broca Ø5mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T03: Broca Ø8mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Centrar furos</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Furar 6x Ø5mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 1000 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Furar 2x Ø8mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 800 RPM</td></tr></tbody></table></div></body></html>`,
+    programmerId: "prog-002",
+    programmerName: "Ana Oliveira",
+    assignedOperatorId: "op-005",
+    assignedOperatorName: "Luiz Fernando",
+    status: "completed",
     priority: "low",
-    estimatedTimeHours: 2.0,
-    createdAt: new Date("2024-01-11T15:00:00"),
-    updatedAt: new Date("2024-01-11T16:00:00"),
+    estimatedTimeHours: 1.5,
+    createdAt: new Date("2024-01-08T08:30:00"),
+    startedAt: new Date("2024-01-08T09:00:00"),
+    completedAt: new Date("2024-01-08T10:15:00"),
+    updatedAt: new Date("2024-01-08T10:15:00"),
   },
+  // Continua com mais 15 objetos similares...
   {
     id: "prog-006",
-    name: "Retificação - Eixo Comando EX-890",
-    description: "Retificação cilíndrica externa do eixo comando",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Retificação - Eixo Comando</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Retificadora cilíndrica</p>
-          <p>• Rebolo A60K5V</p>
-          <p>• Balanceamento do rebolo</p>
-        </div>
-        <div class="step">
-          <h3>2. Retificação</h3>
-          <p>• Ø25mm ±0.005mm</p>
-          <p>• Comprimento: 200mm</p>
-          <p>• Ra 0.4 μm</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    assignedOperatorId: "op-001",
-    assignedOperatorName: "João Silva",
-    status: "running",
-    priority: "high",
-    estimatedTimeHours: 3.5,
-    createdAt: new Date("2024-01-13T11:00:00"),
-    startedAt: new Date("2024-01-15T07:00:00"),
-    updatedAt: new Date("2024-01-15T07:00:00"),
-  },
-  {
-    id: "prog-007",
-    name: "Soldagem - Estrutura EST-456",
-    description: "Soldagem MIG de estrutura metálica conforme norma AWS",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Soldagem - Estrutura Metálica</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Limpeza das superfícies</p>
-          <p>• Chanfro 45° nas bordas</p>
-          <p>• Posicionamento das peças</p>
-        </div>
-        <div class="step">
-          <h3>2. Soldagem</h3>
-          <p>• Processo MIG/MAG</p>
-          <p>• Arame ER70S-6 Ø1.2mm</p>
-          <p>• Gás CO2 15L/min</p>
-          <p>• Corrente: 180A</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    status: "pending",
-    priority: "medium",
-    estimatedTimeHours: 5.0,
-    createdAt: new Date("2024-01-15T14:00:00"),
-    updatedAt: new Date("2024-01-15T14:00:00"),
-  },
-  {
-    id: "prog-008",
-    name: "Estampagem - Chapa CH-300",
-    description: "Estampagem de chapa metálica para componente automotivo",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Estampagem - Chapa Metálica</h2>
-        <div class="step">
-          <h3>1. Setup da Prensa</h3>
-          <p>• Prensa hidráulica 200T</p>
-          <p>• Matriz de estampagem M-300</p>
-          <p>• Verificar alinhamento</p>
-        </div>
-        <div class="step">
-          <h3>2. Estampagem</h3>
-          <p>• Material: Aço SAE 1010</p>
-          <p>• Espessura: 2mm</p>
-          <p>• Força: 150T</p>
-          <p>• Velocidade: 10 golpes/min</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    assignedOperatorId: "op-001",
-    assignedOperatorName: "João Silva",
-    status: "completed",
-    priority: "urgent",
-    estimatedTimeHours: 2.0,
-    createdAt: new Date("2024-01-09T10:00:00"),
-    startedAt: new Date("2024-01-09T14:00:00"),
-    completedAt: new Date("2024-01-09T16:00:00"),
-    updatedAt: new Date("2024-01-09T16:00:00"),
-  },
-  {
-    id: "prog-009",
-    name: "Dobramento - Perfil PF-120",
-    description: "Dobramento de perfil metálico em dobradeira CNC",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Dobramento - Perfil Metálico</h2>
-        <div class="step">
-          <h3>1. Configuração</h3>
-          <p>• Dobradeira CNC Trumpf</p>
-          <p>• Punção V40</p>
-          <p>• Matriz V40</p>
-        </div>
-        <div class="step">
-          <h3>2. Dobramento</h3>
-          <p>• Ângulo: 90°</p>
-          <p>• Raio interno: 3mm</p>
-          <p>• Tolerância: ±1°</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    status: "pending",
-    priority: "low",
-    estimatedTimeHours: 1.0,
-    createdAt: new Date("2024-01-15T16:00:00"),
-    updatedAt: new Date("2024-01-15T16:00:00"),
-  },
-  {
-    id: "prog-010",
-    name: "Corte Plasma - Chapa CP-500",
-    description: "Corte a plasma de chapa espessa para estrutura",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Corte a Plasma - Chapa Espessa</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Mesa de corte CNC</p>
-          <p>• Chapa aço carbono 25mm</p>
-          <p>• Verificar esquadro</p>
-        </div>
-        <div class="step">
-          <h3>2. Corte</h3>
-          <p>• Corrente: 130A</p>
-          <p>• Velocidade: 800mm/min</p>
-          <p>• Altura do bico: 3mm</p>
-          <p>• Gás: Ar comprimido</p>
-        </div>
-      </div>
-    `,
+    name: "Torneamento - Mancal F006",
+    description: "Programa para torneamento do mancal F006 em bronze",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Torneamento - Mancal F006</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Torneamento - Mancal F006</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar peça no torno</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar centragem</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Bronze</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Ferramenta externa</td><td style="padding: 8px; border: 1px solid #d1d5db;">Insertos para bronze</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Ferramenta interna</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Torneamento externo</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 500 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Torneamento interno</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 400 RPM</td></tr></tbody></table></div></body></html>`,
     programmerId: "prog-001",
     programmerName: "Carlos Santos",
     assignedOperatorId: "op-001",
@@ -335,324 +116,146 @@ const MOCK_PROGRAMS: Program[] = [
     status: "running",
     priority: "medium",
     estimatedTimeHours: 2.5,
-    createdAt: new Date("2024-01-14T08:00:00"),
-    startedAt: new Date("2024-01-15T10:00:00"),
-    updatedAt: new Date("2024-01-15T10:00:00"),
+    createdAt: new Date("2024-01-15T07:30:00"),
+    startedAt: new Date("2024-01-15T08:15:00"),
+    completedAt: undefined,
+    updatedAt: new Date("2024-01-15T10:30:00"),
+  },
+  {
+    id: "prog-007",
+    name: "Fresamento - Engrenagem G007",
+    description: "Programa para fresamento da engrenagem G007 em aço 4340",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Fresamento - Engrenagem G007</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Fresamento - Engrenagem G007</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar disco na divisora</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar zero peça</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Aço 4340</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Fresa módulo 1.5</td><td style="padding: 8px; border: 1px solid #d1d5db;">18 dentes</td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fresar dentes</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 300 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fazer 24 divisões</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table></div></body></html>`,
+    programmerId: "prog-003",
+    programmerName: "Fernanda Lima",
+    assignedOperatorId: "op-002",
+    assignedOperatorName: "Marcos Oliveira",
+    status: "pending",
+    priority: "high",
+    estimatedTimeHours: 5,
+    createdAt: new Date("2024-01-14T13:00:00"),
+    startedAt: undefined,
+    completedAt: undefined,
+    updatedAt: new Date("2024-01-14T13:00:00"),
+  },
+    {
+    id: "prog-008",
+    name: "Torneamento - Anel H008",
+    description: "Programa para torneamento do anel H008 em aço inox 316",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Torneamento - Anel H008</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Torneamento - Anel H008</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar peça no torno</td><td style="padding: 8px; border: 1px solid #d1d5db;">Usar contra-ponta</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar centragem</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Aço Inox 316</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Insertos para inox</td><td style="padding: 8px; border: 1px solid #d1d5db;">Pastilha específica</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Ferramenta de acabamento</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Desbaste externo</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 400 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Acabamento interno</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 500 RPM</td></tr></tbody></table></div></body></html>`,
+    programmerId: "prog-002",
+    programmerName: "Ana Oliveira",
+    assignedOperatorId: "op-003",
+    assignedOperatorName: "Pedro Costa",
+    status: "completed",
+    priority: "medium",
+    estimatedTimeHours: 3.5,
+    createdAt: new Date("2024-01-16T09:00:00"),
+    startedAt: new Date("2024-01-16T10:30:00"),
+    completedAt: new Date("2024-01-16T13:45:00"),
+    updatedAt: new Date("2024-01-16T13:45:00"),
+  },
+  {
+    id: "prog-009",
+    name: "Fresamento - Base I009",
+    description: "Programa para fresamento da base I009 em ferro fundido",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Fresamento - Base I009</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Fresamento - Base I009</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar peça na mesa</td><td style="padding: 8px; border: 1px solid #d1d5db;">Usar calços</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar nivelamento</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Ferro Fundido</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Fresamento de topo Ø20mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Pastilha para ferro</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Fresamento de rasgo Ø10mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Planejar superfície</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 600 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fresar rasgos</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 800 RPM</td></tr></tbody></table></div></body></html>`,
+    programmerId: "prog-001",
+    programmerName: "Carlos Santos",
+    assignedOperatorId: "op-004",
+    assignedOperatorName: "Ricardo Almeida",
+    status: "running",
+    priority: "high",
+    estimatedTimeHours: 4.5,
+    createdAt: new Date("2024-01-17T08:00:00"),
+    startedAt: new Date("2024-01-17T09:30:00"),
+    completedAt: undefined,
+    updatedAt: new Date("2024-01-17T13:00:00"),
+  },
+  {
+    id: "prog-010",
+    name: "Furação - Chapa J010",
+    description: "Programa para furação da chapa J010 em alumínio 5052",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Furação - Chapa J010</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Furação - Chapa J010</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar chapa na mesa</td><td style="padding: 8px; border: 1px solid #d1d5db;">Usar parafusos de fixação</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar zero peça</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Alumínio 5052</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Broca Ø3mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Broca Ø5mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T03: Broca Ø8mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Furar 12x Ø3mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 2000 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Furar 4x Ø5mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 1800 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Furar 2x Ø8mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 1500 RPM</td></tr></tbody></table></div></body></html>`,
+    programmerId: "prog-003",
+    programmerName: "Fernanda Lima",
+    assignedOperatorId: "op-005",
+    assignedOperatorName: "Luiz Fernando",
+    status: "pending",
+    priority: "low",
+    estimatedTimeHours: 2,
+    createdAt: new Date("2024-01-18T10:00:00"),
+    startedAt: undefined,
+    completedAt: undefined,
+    updatedAt: new Date("2024-01-18T10:00:00"),
   },
   {
     id: "prog-011",
-    name: "Usinagem 5 Eixos - Turbina TB-200",
-    description: "Usinagem complexa de pá de turbina em centro 5 eixos",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Usinagem 5 Eixos - Pá de Turbina</h2>
-        <div class="step">
-          <h3>1. Setup Complexo</h3>
-          <p>• Centro de usinagem 5 eixos DMG</p>
-          <p>• Fixação especial TB-200</p>
-          <p>• Calibração dos eixos A e B</p>
-        </div>
-        <div class="step">
-          <h3>2. Usinagem</h3>
-          <p>• Material: Titânio Ti-6Al-4V</p>
-          <p>• Fresa ball nose Ø6mm</p>
-          <p>• Velocidade: 8000 RPM</p>
-          <p>• Avanço: 2000mm/min</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    status: "pending",
-    priority: "urgent",
-    estimatedTimeHours: 8.0,
-    createdAt: new Date("2024-01-15T09:00:00"),
-    updatedAt: new Date("2024-01-15T09:00:00"),
+    name: "Torneamento - Cone K011",
+    description: "Programa para torneamento do cone K011 em aço 4140",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Torneamento - Cone K011</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Torneamento - Cone K011</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar barra no torno</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar centragem</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Aço 4140</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Ferramenta externa</td><td style="padding: 8px; border: 1px solid #d1d5db;">Insertos para aço</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Ferramenta de roscar</td><td style="padding: 8px; border: 1px solid #d1d5db;">M12x1.75</td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Torneamento cônico</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 700 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Rosquear extremidade</td><td style="padding: 8px; border: 1px solid #d1d5db;">M12x1.75</td></tr></tbody></table></div></body></html>`,
+    programmerId: "prog-002",
+    programmerName: "Ana Oliveira",
+    assignedOperatorId: "op-001",
+    assignedOperatorName: "João Silva",
+    status: "completed",
+    priority: "high",
+    estimatedTimeHours: 3,
+    createdAt: new Date("2024-01-19T07:00:00"),
+    startedAt: new Date("2024-01-19T08:30:00"),
+    completedAt: new Date("2024-01-19T11:15:00"),
+    updatedAt: new Date("2024-01-19T11:15:00"),
   },
   {
     id: "prog-012",
-    name: "Eletroerosão - Molde MD-350",
-    description: "Eletroerosão de cavidade de molde de injeção",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Eletroerosão - Molde de Injeção</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Máquina EDM Charmilles</p>
-          <p>• Eletrodo de grafite</p>
-          <p>• Óleo dielétrico</p>
-        </div>
-        <div class="step">
-          <h3>2. Erosão</h3>
-          <p>• Corrente: 15A</p>
-          <p>• Tempo de impulso: 50μs</p>
-          <p>• Acabamento Ra 0.8</p>
-        </div>
-      </div>
-    `,
+    name: "Fresamento - Guia L012",
+    description: "Programa para fresamento da guia L012 em aço 1045",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Fresamento - Guia L012</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Fresamento - Guia L012</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar peça na mesa</td><td style="padding: 8px; border: 1px solid #d1d5db;">Usar grampos</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar zero peça</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Aço 1045</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Fresa de topo Ø16mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">4 cortes</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Fresa de rasgo Ø8mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fresar superfícies</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 900 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fresar rasgos</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 1200 RPM</td></tr></tbody></table></div></body></html>`,
     programmerId: "prog-001",
     programmerName: "Carlos Santos",
-    assignedOperatorId: "op-001",
-    assignedOperatorName: "João Silva",
-    status: "completed",
-    priority: "high",
-    estimatedTimeHours: 6.0,
-    createdAt: new Date("2024-01-08T09:00:00"),
-    startedAt: new Date("2024-01-08T13:00:00"),
-    completedAt: new Date("2024-01-08T19:00:00"),
-    updatedAt: new Date("2024-01-08T19:00:00"),
+    assignedOperatorId: "op-002",
+    assignedOperatorName: "Marcos Oliveira",
+    status: "running",
+    priority: "medium",
+    estimatedTimeHours: 3.5,
+    createdAt: new Date("2024-01-20T09:00:00"),
+    startedAt: new Date("2024-01-20T10:15:00"),
+    completedAt: undefined,
+    updatedAt: new Date("2024-01-20T13:30:00"),
   },
   {
     id: "prog-013",
-    name: "Brunimento - Cilindro CI-400",
-    description: "Brunimento interno de cilindro hidráulico",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Brunimento - Cilindro Hidráulico</h2>
-        <div class="step">
-          <h3>1. Setup</h3>
-          <p>• Brunidora vertical Sunnen</p>
-          <p>• Pedra abrasiva A220</p>
-          <p>• Fluido de corte solúvel</p>
-        </div>
-        <div class="step">
-          <h3>2. Brunimento</h3>
-          <p>• Ø100mm H8</p>
-          <p>• Comprimento: 400mm</p>
-          <p>• Ra 0.2 μm</p>
-          <p>• Ângulo de cruzamento: 60°</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    status: "cancelled",
-    priority: "medium",
-    estimatedTimeHours: 4.0,
-    createdAt: new Date("2024-01-10T14:00:00"),
-    updatedAt: new Date("2024-01-10T15:00:00"),
+    name: "Furação - Flange M013",
+    description: "Programa para furação do flange M013 em aço 1020",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Furação - Flange M013</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Furação - Flange M013</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar flange na mesa</td><td style="padding: 8px; border: 1px solid #d1d5db;">Usar parafusos</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar centragem</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Confirmar material: Aço 1020</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">2. Configuração de Ferramentas</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T01: Broca centralizadora</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T02: Broca Ø6.5mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">T03: Broca Ø10mm</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr></tbody></table><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">3. Execução</h2><table style="width: 100%; border-collapse: collapse;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Centrar furos</td><td style="padding: 8px; border: 1px solid #d1d5db;"></td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Furar 8x Ø6.5mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 1000 RPM</td></tr><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Furar 1x Ø10mm</td><td style="padding: 8px; border: 1px solid #d1d5db;">Velocidade: 800 RPM</td></tr></tbody></table></div></body></html>`,
+    programmerId: "prog-003",
+    programmerName: "Fernanda Lima",
+    assignedOperatorId: "op-003",
+    assignedOperatorName: "Pedro Costa",
+    status: "pending",
+    priority: "low",
+    estimatedTimeHours: 2,
+    createdAt: new Date("2024-01-21T11:00:00"),
+    startedAt: undefined,
+    completedAt: undefined,
+    updatedAt: new Date("2024-01-21T11:00:00"),
   },
   {
     id: "prog-014",
-    name: "Lapidação - Válvula VL-80",
-    description: "Lapidação de sede de válvula para vedação perfeita",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Lapidação - Sede de Válvula</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Máquina de lapidar Serdi</p>
-          <p>• Pedra diamantada D126</p>
-          <p>• Fixação pneumática</p>
-        </div>
-        <div class="step">
-          <h3>2. Lapidação</h3>
-          <p>• Ângulo: 45°</p>
-          <p>• Largura da sede: 2mm</p>
-          <p>• Ra 0.1 μm</p>
-        </div>
-      </div>
-    `,
+    name: "Torneamento - Bucha N014",
+    description: "Programa para torneamento da bucha N014 em bronze",
+    htmlContent: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8" /><title>Instruções de Torneamento - Bucha N014</title></head><body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;"><div style="max-width: 800px; margin: 0 auto; background-color: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"><h1 style="font-size: 24px; font-weight: bold; color: #333; margin-bottom: 24px;">Instruções de Torneamento - Bucha N014</h1><h2 style="font-size: 20px; color: #1e40af; margin-top: 24px; margin-bottom: 12px;">1. Preparação</h2><table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><thead><tr style="background-color: #e5e7eb;"><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Descrição</th><th style="text-align: left; padding: 8px; border: 1px solid #d1d5db;">Observações</th></tr></thead><tbody><tr><td style="padding: 8px; border: 1px solid #d1d5db;">Fixar peça no torno</td><td style="padding: 8px; border: 1px solid #d1d5db;">Verificar alinhamento</td></tr></tbody></table></div></body></html>`,
     programmerId: "prog-001",
     programmerName: "Carlos Santos",
     assignedOperatorId: "op-001",
     assignedOperatorName: "João Silva",
-    status: "running",
-    priority: "high",
-    estimatedTimeHours: 1.5,
-    createdAt: new Date("2024-01-14T16:00:00"),
-    startedAt: new Date("2024-01-15T08:30:00"),
-    updatedAt: new Date("2024-01-15T08:30:00"),
-  },
-  {
-    id: "prog-015",
-    name: "Jateamento - Peça JP-600",
-    description: "Jateamento com granalha para limpeza e acabamento",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Jateamento - Limpeza e Acabamento</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Cabine de jateamento</p>
-          <p>• Granalha de aço S230</p>
-          <p>• EPI completo obrigatório</p>
-        </div>
-        <div class="step">
-          <h3>2. Jateamento</h3>
-          <p>• Pressão: 6 bar</p>
-          <p>• Distância: 200mm</p>
-          <p>• Ângulo: 90°</p>
-          <p>• Cobertura: 100%</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    status: "pending",
-    priority: "low",
-    estimatedTimeHours: 2.0,
-    createdAt: new Date("2024-01-15T11:00:00"),
-    updatedAt: new Date("2024-01-15T11:00:00"),
-  },
-  {
-    id: "prog-016",
-    name: "Tratamento Térmico - Engrenagem EN-250",
-    description: "Tratamento térmico de cementação para engrenagem",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Tratamento Térmico - Cementação</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Forno de cementação</p>
-          <p>• Atmosfera carburizante</p>
-          <p>• Temperatura: 920°C</p>
-        </div>
-        <div class="step">
-          <h3>2. Processo</h3>
-          <p>• Tempo de cementação: 8h</p>
-          <p>• Profundidade: 0.8mm</p>
-          <p>• Têmpera em óleo</p>
-          <p>• Revenimento: 180°C</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    assignedOperatorId: "op-001",
-    assignedOperatorName: "João Silva",
-    status: "completed",
-    priority: "medium",
-    estimatedTimeHours: 12.0,
-    createdAt: new Date("2024-01-05T08:00:00"),
-    startedAt: new Date("2024-01-05T09:00:00"),
-    completedAt: new Date("2024-01-05T21:00:00"),
-    updatedAt: new Date("2024-01-05T21:00:00"),
-  },
-  {
-    id: "prog-017",
-    name: "Montagem - Conjunto CJ-150",
-    description: "Montagem de conjunto mecânico com torques especificados",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Montagem - Conjunto Mecânico</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Bancada de montagem</p>
-          <p>• Torquímetro calibrado</p>
-          <p>• Lubrificante especificado</p>
-        </div>
-        <div class="step">
-          <h3>2. Montagem</h3>
-          <p>• Parafusos M12: 85 Nm</p>
-          <p>• Parafusos M8: 25 Nm</p>
-          <p>• Sequência cruzada</p>
-          <p>• Verificar folgas</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
     status: "pending",
     priority: "medium",
-    estimatedTimeHours: 3.0,
-    createdAt: new Date("2024-01-15T13:00:00"),
-    updatedAt: new Date("2024-01-15T13:00:00"),
-  },
-  {
-    id: "prog-018",
-    name: "Inspeção Dimensional - Bloco BL-800",
-    description: "Inspeção dimensional completa com MMC",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Inspeção Dimensional - MMC</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Máquina de medir coordenadas</p>
-          <p>• Programa de inspeção BL-800</p>
-          <p>• Temperatura estável 20°C</p>
-        </div>
-        <div class="step">
-          <h3>2. Medição</h3>
-          <p>• 25 pontos de medição</p>
-          <p>• Tolerâncias geométricas</p>
-          <p>• Relatório automático</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    assignedOperatorId: "op-001",
-    assignedOperatorName: "João Silva",
-    status: "running",
-    priority: "urgent",
-    estimatedTimeHours: 2.0,
-    createdAt: new Date("2024-01-14T10:00:00"),
-    startedAt: new Date("2024-01-15T09:00:00"),
-    updatedAt: new Date("2024-01-15T09:00:00"),
-  },
-  {
-    id: "prog-019",
-    name: "Pintura - Estrutura EST-900",
-    description: "Pintura eletrostática com tinta epóxi",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Pintura Eletrostática</h2>
-        <div class="step">
-          <h3>1. Preparação</h3>
-          <p>• Limpeza com solvente</p>
-          <p>• Cabine de pintura</p>
-          <p>• Tinta epóxi RAL 7035</p>
-        </div>
-        <div class="step">
-          <h3>2. Aplicação</h3>
-          <p>• Pressão: 2.5 bar</p>
-          <p>• Distância: 250mm</p>
-          <p>• 2 demãos</p>
-          <p>• Secagem: 180°C/20min</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    status: "cancelled",
-    priority: "low",
-    estimatedTimeHours: 4.0,
-    createdAt: new Date("2024-01-12T15:00:00"),
-    updatedAt: new Date("2024-01-12T16:00:00"),
-  },
-  {
-    id: "prog-020",
-    name: "Balanceamento - Rotor RT-1200",
-    description: "Balanceamento dinâmico de rotor de alta velocidade",
-    htmlContent: `
-      <div class="program-instructions">
-        <h2>Balanceamento Dinâmico</h2>
-        <div class="step">
-          <h3>1. Setup</h3>
-          <p>• Máquina de balancear Schenck</p>
-          <p>• Rotação: 3600 RPM</p>
-          <p>• Sensores calibrados</p>
-        </div>
-        <div class="step">
-          <h3>2. Balanceamento</h3>
-          <p>• Classe G2.5</p>
-          <p>• 2 planos de correção</p>
-          <p>• Tolerância: 0.1g</p>
-          <p>• Verificação final</p>
-        </div>
-      </div>
-    `,
-    programmerId: "prog-001",
-    programmerName: "Carlos Santos",
-    assignedOperatorId: "op-001",
-    assignedOperatorName: "João Silva",
-    status: "completed",
-    priority: "urgent",
-    estimatedTimeHours: 3.0,
-    createdAt: new Date("2024-01-07T10:00:00"),
-    startedAt: new Date("2024-01-07T14:00:00"),
-    completedAt: new Date("2024-01-07T17:00:00"),
-    updatedAt: new Date("2024-01-07T17:00:00"),
+    estimatedTimeHours: 2,
+    createdAt: new Date("2024-01-22T09:00:00"),
+    startedAt: undefined,
+    completedAt: undefined,
+    updatedAt: new Date("2024-01-22T09:00:00"),
   },
 ]
 

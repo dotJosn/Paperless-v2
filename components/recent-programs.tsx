@@ -2,10 +2,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Eye, Play, CheckCircle } from "lucide-react"
+import Link from "next/link"
 
 const recentPrograms = [
   {
-    id: "PGM-001",
+    id: "prog-001",
     name: "Usinagem Peça A-123",
     programmer: "Carlos Santos",
     operator: "João Silva",
@@ -14,7 +15,7 @@ const recentPrograms = [
     completedAt: "2024-01-15 14:30",
   },
   {
-    id: "PGM-002",
+    id: "prog-002",
     name: "Fresamento Bloco B-456",
     programmer: "Ana Costa",
     operator: "Pedro Lima",
@@ -23,7 +24,7 @@ const recentPrograms = [
     startedAt: "2024-01-15 13:00",
   },
   {
-    id: "PGM-003",
+    id: "prog-003",
     name: "Torneamento Eixo C-789",
     programmer: "Carlos Santos",
     operator: "-",
@@ -31,7 +32,7 @@ const recentPrograms = [
     createdAt: "2024-01-15",
   },
   {
-    id: "PGM-004",
+    id: "prog-004",
     name: "Furação Placa D-012",
     programmer: "Ana Costa",
     operator: "Maria Oliveira",
@@ -82,8 +83,10 @@ export function RecentPrograms() {
                   </p>
                 </div>
                 <Button variant="outline" size="sm">
-                  <Eye className="w-4 h-4 mr-2" />
-                  Ver Detalhes
+                  <Link href={`/programs/${program.id}`} className="flex items-center">
+                    <Eye className="w-4 h-4 mr-2" />
+                    Ver Detalhes
+                  </Link>
                 </Button>
               </div>
             )

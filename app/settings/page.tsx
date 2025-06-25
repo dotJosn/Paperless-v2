@@ -51,7 +51,6 @@ export default function SettingsPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
-  // Estados para as configurações
   const [companySettings, setCompanySettings] = useState<CompanySettings>({
     name: "Simoldes Tools",
     address: "KM 628 BR-376, 26500 - Campo Largo da Roseira, São José dos Pinhais - PR, 83015-000",

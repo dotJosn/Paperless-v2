@@ -27,7 +27,7 @@ const MOCK_PROGRAMS: Program[] = [
     programmerName: "Carlos Santos",
     assignedOperatorId: "op-001",
     assignedOperatorName: "João Silva",
-    status: "completed",
+    status: "pending",
     priority: "high",
     estimatedTimeHours: 2.5,
     createdAt: new Date("2024-01-10T08:00:00"),
